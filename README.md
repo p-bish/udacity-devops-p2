@@ -1,13 +1,11 @@
 # Overview
 
-<TODO: complete this with an overview of your project>
+This project will utilize Github as a version control and source repository for Github actions, which will test the code. It will then utilize Azure DevOps Pipelines to provide continuous delivey of a Flask ML service running on a Linux WebApp in Microsoft Azure, and demonstrate the WebApp's functionality.
 
 ## Project Plan
-<TODO: Project Plan
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
 * [Trello Board](https://trello.com/invite/b/tIrSrGgB/ATTI53ff80fc6184d8cab55f405048e2f10b8B5BCE87/udacity-azuredevops-project-2)
+* [Project Plan Spreadsheet](docs/Udacity-AzureDevOps-Project2_Plan.xlsx)
 
 ## Instructions
 
