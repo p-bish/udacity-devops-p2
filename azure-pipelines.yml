@@ -6,15 +6,14 @@
 trigger:
 - main
 
+pool: self-hosted-1
+
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: '40b05164-e205-4f4c-94a5-b5551aaf03b4'
+  azureServiceConnectionId: 'Azure subscription 1 (0ba2f3b4-c935-4630-9cd3-88b8913691a7)'
 
   # Web app name
   webAppName: 'udacity-devops-p2'
-
-  # Agent VM image name
-  vmImageName: 'ubuntu-latest'
 
   # Environment name
   environmentName: 'udacity-devops-p2'
@@ -30,8 +29,7 @@ stages:
   displayName: Build stage
   jobs:
   - job: BuildJob
-    pool:
-      vmImage: $(vmImageName)
+    pool: self-hosted-1
     steps:
     - task: UsePythonVersion@0
       inputs:
@@ -66,8 +64,7 @@ stages:
   condition: succeeded()
   jobs:
   - deployment: DeploymentJob
-    pool:
-      vmImage: $(vmImageName)
+    pool: self-hosted-1
     environment: $(environmentName)
     strategy:
       runOnce:
