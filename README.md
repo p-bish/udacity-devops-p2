@@ -9,8 +9,8 @@ This project will utilize Github as a version control and source repository for 
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+This diagram outlines the key components in launching this app.
+![Diagram](docs/architecture.png)
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
